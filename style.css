@@ -1,0 +1,137 @@
+/* imports de fontes */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* reset de estilos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+/* declaração de variaveis */
+:root{
+    --cor-barraNavegacao-rodape: #1e1f22;
+    --cor-titulo-botao: #FFAE00;
+    --cor-card: rgba(37, 37, 37, 0.8);
+    --cor-texto: #ffffff;
+    --fonte-titulo: 'DM Serif Text', serif;
+    --fonte-texto: 'Roboto', sans-serif;
+}
+
+/* estilização do plano de fundo da pagina */
+body{
+    background-image:url('./materialCardapio/imagens/bg.png');
+    color: var(--cor-texto);
+    font-family: var(--fonte-texto);
+}
+
+header{
+    background-color: var(--cor-barraNavegacao-rodape);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+li{
+    margin: 10px;
+    list-style: none;
+}
+
+a{
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: var(--fonte-titulo);
+}
+
+a:hover{
+   color:var(--cor-titulo-botao);
+}
+
+/* img:hover{
+    transform: scale(2);
+} */
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--fonte-titulo);
+    margin:10px 0px;
+}
+
+h2{
+    color: var(--cor-titulo-botao);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.boxProduto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-card);
+    max-width: 900px;
+    margin:20px 0px;
+    border-radius: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+
+}
+
+/* estilização das imagens */
+/* logo */
+ header img{
+    width: 250px;
+}
+
+/* imagem produto */
+.boxImg img{
+    width: 400px;
+} 
+
+.boxTexto{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    justify-content:space-evenly;
+    
+}
+
+.boxTexto button{
+    background-color: var(--cor-titulo-botao);
+    width: 100px;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    border: none;
+    color: var(--cor-texto);
+    font-weight: bolder;
+}
+
+footer{
+    background-color: var(--cor-barraNavegacao-rodape);
+    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
